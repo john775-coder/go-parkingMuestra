@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es"> <!-- Define el tipo de documento y el idioma de la página como español -->
+<head>
+    <meta charset="UTF-8"> <!-- Especifica la codificación de caracteres del documento -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura la ventana gráfica para adaptarse a diferentes dispositivos -->
+    <title>Go Parking</title> <!-- Título de la página web -->
+    <link rel="stylesheet" href="styles.css"> <!-- Enlace al archivo de estilos CSS -->
+    <!-- Importar la fuente Poppins desde Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <!-- Navegación principal -->
+        <nav>
+            <div class="logo">
+                <!-- Logo de la empresa -->
+                <img src="img/logo1.png" alt="Go Parking Logo" width="60px">
+            </div>
+            <ul class="nav-links">
+                <!-- Enlaces de navegación -->
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Descargar App</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#">Nosotros</a></li>
+            </ul>
+            <div class="logo-right">
+                <!-- Segundo logo a la derecha -->
+                <img src="img/logo2.png" alt="Otro Logo" width="60px">
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <!-- Sección principal o de héroe -->
+        <div class="hero-content">
+            <!-- Contenido textual de la sección -->
+            <h1>Descarga la app <b> Go Parking </b></h1>
+            <p>Y descubre cómo estamos transformando la forma en que las personas se mueven por las ciudades.</p>
+            <div class="cta-buttons">
+                <!-- Botones de llamada a la acción -->
+                <button class="btn-primary" id="register-btn">Regístrate ahora</button> <!-- Agregado id="register-btn" -->
+                <button class="btn-secondary" id="download-btn">Descargar app</button>
+            </div>
+        </div>
+        <div class="hero-image">
+            <!-- Imagen principal -->
+            <img src="img/mapa1.png" alt="App Go Parking" width="300px">
+            <!-- Imagen PNG superpuesta -->
+            <img src="img/celularfoto.png" alt="Imagen superpuesta" class="superpuesta">
+        </div>
+    </section>
+
+    <!-- Modal para captura de correo electrónico -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span> <!-- Botón de cierre del modal -->
+            <h2>¡Estamos próximos al lanzamiento!</h2>
+            <p>Déjanos tu correo para que seas uno de los primeros en usar la app.</p>
+            <input type="email" id="email" placeholder="Ingresa tu correo"> <!-- Campo para ingresar el correo electrónico -->
+            <button class="btn-primary" id="submit-email">Enviar</button> <!-- Botón para enviar el correo -->
+        </div>
+    </div>
+
+    <!-- Sección de pasos para usar la app -->
+    <section class="steps">
+        <div class="step">
+            <h2>Paso 1</h2>
+            <p>Descarga la app y crea tu perfil.</p>
+        </div>
+        <div class="step">
+            <h2>Paso 2</h2>
+            <p>Busca y comparte tu lugar de estacionamiento.</p>
+        </div>
+        <div class="step">
+            <h2>Paso 3</h2>
+            <p>Accede al menú de pagos.</p>
+        </div>
+        <div class="step">
+            <h2>Paso 4</h2>
+            <p>Estaciona y disfruta.</p>
+        </div>
+    </section>
+
+    <!-- Sección de ganar recompensas -->
+    <section class="earn">
+        <div class="text-content">
+            <h2>¡GANA POR CEDER TU LUGAR!</h2>
+            <p>Go Parking premia tu generosidad. Te obsequiamos con dinero, premios y otras recompensas por ceder tu espacio.</p>
+            <button class="btn-primary">Empieza ahora</button> <!-- Botón para iniciar -->
+        </div>
+        <div class="images">
+            <img src="img/hombrecelular.jpg" alt="Placeholder" width="400px">
+        </div>
+    </section>
+
+    <!-- Sección de cómo funciona la app -->
+    <section class="how-it-works">
+        <div class="text-content">
+            <h2>¿Cómo funciona la app?</h2>
+            <p>Descargar la aplicación Go Parking es el primer paso para una experiencia de estacionamiento más sencilla y agradable.</p>
+            <ul>
+                <!-- Lista de funcionalidades de la app -->
+                <li>Encontrar estacionamiento en tiempo real.</li>
+                <li>Reservar tu lugar de estacionamiento.</li>
+                <li>Pagar de forma segura.</li>
+                <li>Generar recompensas.</li>
+            </ul>
+        </div>
+        <div class="images">
+            <img src="img/mujerauto.jpg" alt="Placeholder" width="400px">
+        </div>
+    </section>
+
+    <!-- Sección de testimonios de usuarios -->
+    <div class="header2" style="text-align: center;">
+        <h2>Opiniones de nuestros usuarios</h2>
+    </div>
+    <section class="testimonials">
+        <!-- Testimonio 1 -->
+        <div class="testimonial">
+            <img src="img/avatar001.png" alt="Usuario 1">
+            <p>Quick, easy & reliable</p>
+            <p>- María López</p>
+        </div>
+        <!-- Testimonio 2 -->
+        <div class="testimonial">
+            <img src="img/avatar002.png" alt="Usuario 2">
+            <p>The best clinic in town</p>
+            <p>- Juan Pérez</p>
+        </div>
+        <!-- Testimonio 3 -->
+        <div class="testimonial">
+            <img src="img/avatar003.png" alt="Usuario 3">
+            <p>The true professionals</p>
+            <p>- Robert Sánchez</p>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Acerca de Nosotros</h3>
+                <p>Logramos juntos una comunidad de colaboración, optimizando el tiempo y reduciendo nuestro impacto ambiental.</p>
+                <button class="btn-secondary">Más Info</button>
+            </div>
+            <div class="footer-section">
+                <h3>Publicidad</h3>
+                <p>Promociona tu negocio.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Más Información</h3>
+                <p>Contacta con nosotros.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Empieza ahora</h3>
+                <button class="btn-primary">App</button>
+            </div>
+        </div>
+        <div class="social-media">
+            <!-- Iconos de redes sociales -->
+            <img src="img/sobre.png" alt="Correo" width="30px">
+            <p>info@goparking.ar</p>
+        </div>
+        <div class="footer-bottom">
+            <!-- Texto de derechos reservados -->
+            <p>&copy; 2024 Go Parking. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript para el Modal -->
+    <script>
+        // Obtener elementos del DOM
+        const modal = document.getElementById("modal");
+        const downloadBtn = document.getElementById("download-btn");
+        const registerBtn = document.getElementById("register-btn"); // Nuevo: Referencia al botón "Regístrate ahora"
+        const closeBtn = document.querySelector(".close");
+        const submitBtn = document.getElementById("submit-email");
+
+        // Abrir el modal al hacer clic en "Descargar app"
+        downloadBtn.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        // Abrir el modal al hacer clic en "Regístrate ahora"
+        registerBtn.onclick = function() { // Nuevo: Evento onclick para "Regístrate ahora"
+            modal.style.display = "block";
+        }
+
+        // Cerrar el modal al hacer clic en la "X"
+        closeBtn.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        // Cerrar el modal al hacer clic fuera de él
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+        // Acción al enviar el correo electrónico
+        submitBtn.onclick = function() {
+            const email = document.getElementById("email").value;
+            if (email) {
+                // Muestra un mensaje de agradecimiento y cierra el modal
+                alert(`Gracias por tu interés. Te contactaremos pronto en ${email}`);
+                modal.style.display = "none";
+            } else {
+                // Solicita al usuario que ingrese un correo válido
+                alert("Por favor, ingresa un correo válido.");
+            }
+        }
+    </script>
+
+    <!-- CSS para el Modal -->
+    <style>
+        /* Estilo general para el modal */
+        .modal {
+            display: none; /* El modal está oculto por defecto */
+            position: fixed; /* Fijo en la pantalla */
+            z-index: 1000; /* Se asegura de que esté por encima de otros elementos */
+            left: 0;
+            top: 0;
+            width: 100%; /* Ocupa todo el ancho de la pantalla */
+            height: 100%; /* Ocupa todo el alto de la pantalla */
+            overflow: auto; /* Permite hacer scroll si el contenido es demasiado grande */
+            background-color: rgb(0,0,0); /* Fondo negro */
+            background-color: rgba(0,0,0,0.4); /* Fondo negro con transparencia */
+            padding-top: 60px; /* Espacio superior dentro del modal */
+        }
+
+        /* Estilo del contenido del modal */
+        .modal-content {
+            background-color: #fefefe; /* Fondo blanco */
+            margin: 5% auto; /* Centra el modal verticalmente */
+            padding: 20px; /* Relleno interno */
+            border: 1px solid #888; /* Borde gris */
+            width: 80%; /* Ancho del contenido del modal */
+            max-width: 500px; /* Ancho máximo del modal */
+            text-align: center; /* Centra el texto */
+            border-radius: 10px; /* Bordes redondeados */
+        }
+
+        /* Estilo del botón de cierre (X) */
+        .close {
+            color: #aaa; /* Color gris claro */
+            float: right; /* Flota a la derecha */
+            font-size: 28px; /* Tamaño de fuente grande */
+            font-weight: bold; /* Fuente en negrita */
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black; /* Cambia a negro al pasar el mouse o enfocar */
+            text-decoration: none; /* Sin subrayado */
+            cursor: pointer; /* Cursor cambia a puntero */
+        }
+
+        /* Estilo del campo de correo electrónico */
+        #email {
+            width: 80%; /* Ocupa el 80% del ancho disponible */
+            padding: 10px; /* Espaciado interno */
+            margin: 10px 0; /* Margen superior e inferior */
+            border-radius: 5px; /* Bordes redondeados */
+            border: 1px solid #ddd; /* Borde gris claro */
+        }
+    </style>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
