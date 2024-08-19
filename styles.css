@@ -1,0 +1,432 @@
+/* Reset de estilos predeterminados */
+/* Elimina márgenes, rellenos y establece el modelo de caja en border-box para todos estos elementos */
+body, h1, h2, p, ul, li, img, div {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/* Estilo general del cuerpo */
+/* Configura la fuente predeterminada y el color de texto para el cuerpo del documento */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+}
+
+/* Estilos del header */
+/* Define un fondo con un degradado y establece el alto y el relleno del encabezado */
+header {
+    background: linear-gradient(to right, #0dc9ff, #7c44d8);
+    padding: 20px 0;
+    height: 50px;
+}
+
+/* Estilos para la navegación */
+/* Configura la barra de navegación para que sea flexible y distribuya el espacio entre los elementos */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Estilos para los enlaces de navegación */
+/* Configura la lista de enlaces para que no tenga viñetas y que los enlaces se distribuyan de manera uniforme */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    flex: 1;
+    justify-content: center;
+}
+
+/* Estilo de los enlaces de navegación */
+/* Elimina el subrayado y cambia el color del texto a blanco */
+.nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Estilo de los logotipos */
+/* Configura los logotipos para que se alineen verticalmente en el centro */
+.logo, .logo-right {
+    display: flex;
+    align-items: center;
+}
+
+/* Estilos para la sección Hero */
+/* Configura la sección hero para que sea flexible, ocupe toda la altura de la pantalla, y tenga una imagen de fondo */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(img/volantes.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 80vh; /* Ocupar toda la altura de la pantalla */
+}
+
+/* Contenido de la sección Hero */
+/* Establece un ancho máximo, margina el contenido hacia la izquierda y ajusta el color y alineación del texto */
+.hero-content {
+    max-width: 50%;
+    margin-left: 50px;
+    color: white;
+    text-align: left;
+}
+
+/* Título en la sección Hero */
+/* Define un tamaño de fuente grande y un margen inferior para el título */
+.hero-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-shadow: 0px 10px 10px black;
+}
+
+/* Texto en la sección Hero */
+/* Ajusta el tamaño de la fuente y el margen inferior del párrafo */
+.hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+/* Botones de llamada a la acción */
+/* Configura la disposición de los botones con un espacio entre ellos */
+.cta-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+/* Estilos para los botones principales y secundarios */
+/* Define el relleno, los bordes redondeados y el color del texto para ambos botones */
+.btn-primary, .btn-secondary {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    color: white;
+}
+
+/* Botón primario */
+/* Establece el color de fondo para el botón primario */
+.btn-primary {
+    background-color: #7B46D8;
+}
+
+/* Botón secundario */
+/* Establece el color de fondo para el botón secundario */
+.btn-secondary {
+    background-color: #7B46D8;
+}
+
+/* Imagen de la sección Hero */
+/* Configura la posición y distribución de la imagen dentro de la sección */
+.hero-image {
+    position: relative;
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* Estilo de las imágenes en la sección Hero */
+/* Ajusta el tamaño y los bordes redondeados de las imágenes */
+.hero-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    max-width: 400px;
+}
+
+/* Imagen superpuesta */
+/* Posiciona la imagen superpuesta en la parte inferior derecha de su contenedor */
+.hero-image .superpuesta {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Estilos de la sección de pasos */
+/* Configura la disposición flexible de los pasos, añade un fondo blanco y otros estilos para resaltar la sección */
+.steps {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 20px;
+    background: #fff;
+    max-width: 80%;
+    margin: -50px auto 0 auto;
+    position: relative;
+    z-index: 1;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap;
+}
+
+/* Estilo de cada paso */
+/* Centra el texto y limita el ancho de cada paso */
+.step {
+    text-align: center;
+    max-width: 200px;
+}
+
+/* Estilo de los contenedores principales de las secciones */
+/* Configura la disposición y alineación flexible de los elementos dentro de las secciones */
+.earn, .how-it-works {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+/* Contenido textual en las secciones */
+/* Limita el ancho máximo del contenido textual y justifica el texto */
+.text-content {
+    max-width: 500px;
+    text-align: justify;
+}
+
+/* Estilo de las imágenes en las secciones */
+/* Configura la disposición de las imágenes y su alineación vertical */
+.images {
+    display: flex;
+    align-items: center;
+}
+
+/* Ajuste del tamaño de las imágenes */
+/* Asegura que las imágenes no excedan el ancho disponible y mantienen su proporción */
+.images img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilos para la sección de testimonios */
+/* Configura la disposición de los testimonios y ajusta los márgenes y el espaciado */
+.testimonials {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 90px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+/* Estilo de cada testimonio */
+/* Establece la disposición, alineación y tamaño máximo para los elementos del testimonio */
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 150px;
+    text-align: center;
+}
+
+/* Estilo de las imágenes en los testimonios */
+/* Redondea las imágenes y ajusta el margen inferior */
+.testimonial img {
+    border-radius: 50%;
+    margin-bottom: 10px;
+    max-width: 100px;
+    height: auto;
+}
+
+/* Estilo del texto en los testimonios */
+/* Ajusta los márgenes del texto */
+.testimonial p {
+    margin: 5px 0;
+}
+
+/* Estilos del pie de página */
+/* Configura el fondo, color del texto, y el relleno del pie de página */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Contenido del pie de página */
+/* Configura la disposición de los elementos en el pie de página y ajusta los márgenes */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+/* Sección del pie de página */
+/* Define el tamaño mínimo y los márgenes para las secciones dentro del pie de página */
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 20px;
+}
+
+/* Estilo de los encabezados en el pie de página */
+/* Ajusta el tamaño de fuente, el color y los márgenes de los encabezados */
+.footer-section h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: white;
+}
+
+/* Estilo del texto y botones en el pie de página */
+/* Ajusta los márgenes del texto y los botones */
+.footer-section p, .footer-section button {
+    margin-bottom: 10px;
+}
+
+/* Estilo de los iconos de redes sociales */
+/* Configura el margen inferior de los iconos */
+.social-media {
+    margin-bottom: 20px;
+}
+
+/* Estilo de los iconos de redes sociales */
+/* Configura el margen, el cursor y añade una transición al hacer hover */
+.social-media img {
+    margin: 0 10px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+/* Efecto hover en los iconos de redes sociales */
+/* Aumenta el tamaño de los iconos al hacer hover */
+.social-media img:hover {
+    transform: scale(1.1);
+}
+
+/* Estilo del texto en la parte inferior del pie de página */
+/* Define el tamaño de fuente y el color para el texto en la parte inferior */
+.footer-bottom {
+    font-size: 14px;
+    color: #7B46D8;
+}
+
+/* Estilo del texto en la parte inferior */
+/* Elimina los márgenes */
+.footer-bottom p {
+    margin: 0;
+}
+
+/* Diseño Responsive */
+/* Media query para pantallas con un ancho máximo de 1024px */
+@media(max-width: 1024px) {
+    .hero {
+        flex-direction: row; /* Mantén el layout de PC */
+    }
+
+    .hero-content {
+        margin-left: 20px;
+        max-width: 50%;
+    }
+
+    .hero-image {
+        justify-content: flex-end;
+        max-width: 50%;
+    }
+}
+
+/* Media query para pantallas con un ancho máximo de 768px */
+@media(max-width: 768px) {
+    .hero {
+        flex-direction: row; /* Mantén el layout de PC */
+    }
+
+    .hero-content {
+        margin-left: 20px;
+        max-width: 50%;
+    }
+
+    .hero-image {
+        justify-content: flex-end;
+        max-width: 50%;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links li a {
+        display: grid;
+        width: 100%;
+        padding: 0;
+        height: 6px;
+        align-content: center;
+    }
+}
+
+/* Media query para pantallas con un ancho máximo de 480px */
+@media(max-width: 480px) {
+    .hero {
+        flex-direction: column; /* Mantén el layout de PC */
+        align-items: center;
+    }
+
+    .hero-content {
+        margin-left: 20px;
+        max-width: 50%;
+        text-align: center;
+        align-items: center;
+        margin: 0px;
+    }
+
+    .hero-image {
+        justify-content: flex-end;
+        max-width: 50%;
+    }
+
+    .hero-content h1 {
+        font-size: 2em;
+    }
+
+    .hero-content p {
+        font-size: 1em;
+    }
+
+    .steps {
+        padding: 20px 10px;
+    }
+
+    .footer-content {
+        gap: 10px;
+    }
+
+    .footer-section {
+        margin-bottom: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
